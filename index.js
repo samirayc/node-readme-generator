@@ -55,13 +55,13 @@ const questions = [
 
 
 // Creating README file
-function writeToFile(fileName,data){
+function writeToFile(fileName, data){
     return fs.writeFileSync(path.join(process.cwd(), fileName), data);
 }
 
 // Initializing app
 function init() {
-    inquirer.createPromptModule(questions).then((responses) => {
+    inquirer.prompt(questions).then((responses) => {
         console.log('Creating professional README.md file...');
         writeToFile('./README.md', generateMarkdown({ ...responses }));
     });
