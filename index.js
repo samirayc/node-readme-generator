@@ -33,6 +33,11 @@ const questions = [
     },
     {
         type: 'input',
+        name: 'name',
+        message: 'State your first and last name.',
+    },
+    {
+        type: 'input',
         name: 'contributionGuidelines',
         message: 'Please give any guidelines for making contributions to the project.',
     },

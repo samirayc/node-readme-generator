@@ -35,6 +35,7 @@ function generateMarkdown(data) {
     return `# ${data.title}
     by ${data.name}
     ${renderLicenseBadge(data.license)}
+
     ## Table of Contents
     • [Description](#description)
     • [Installation](#installation)
@@ -52,6 +53,7 @@ function generateMarkdown(data) {
     ## Contribution Guidelines
     ${data.contributionGuidelines}
     ## Questions
+    • Name - ${data.name}
     • Email - ${data.email}
     • Github - [${data.github}](https://github.com/${data.github}/)
     ## Tests
